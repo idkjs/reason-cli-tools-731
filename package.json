@@ -1,0 +1,19 @@
+{
+	"name": "bidirectional-type-checker",
+	"scripts": {
+		"start": "./main.exe",
+		"build": "bsb",
+		"start:byte": "./mainbytecode.exe",
+		"start:js": "node ./lib/js/src/Main.js",
+		"build:native": "bsb -clean-world -make-world -backend native",
+		"build:js": "bsb -clean-world -make-world -backend js",
+		"build:byte": "bsb -clean-world -make-world -backend bytecode",
+		"clean": "bsb -clean-world",
+		"reformat": "bsrefmt --in-place $(find src -name '*.re' -print) -w 80",
+		"build-watch": "bsb -clean-world -make-world -backend native -- -w"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"bs-platform": "7.3.1"
+	}
+}

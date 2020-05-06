@@ -1,0 +1,21 @@
+{
+	"name": "reason-cli-tools",
+	"namespace": true,
+	"sources": [
+		{
+			"dir": "src"
+		}
+	],
+	"package-specs": [
+		{
+			"module": "es6",
+			"in-source": false
+		},
+		{
+			"module": "commonjs",
+			"in-source": true
+		}
+	],
+	"refmt": 3,
+	"suffix": ".bs.js"
+}
